@@ -1,0 +1,711 @@
+html { 
+    
+    z-index: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body{
+    background: url("img/Background.png") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/*header*/
+header{
+    background-image: url("img/long_bar2.png");
+    /* background-color: red; */
+    /* opacity: 3; */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    /* border: solid 5px red; */
+    /* text-align: right;   */
+}
+/* end header */
+
+/* TODO: Need to make this work */
+/* nav */
+#nav{
+    display: none;
+    position: fixed;
+    background-color:#08243c9d;
+    /* opacity: .25; */
+    height: 100%;
+    width: 15%;
+    top: 0px;
+    left: 0;
+    z-index:4;
+    /* background-color: #00a2ff; */
+    /* transition: 0.5s; */
+    text-align: left; 
+    transition: 0.5s;
+}
+
+
+#nav a{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top:20px;
+    left:0;   
+    display: block;
+    color: rgb(175, 175, 175);
+}
+
+#nav a:hover{
+    color: #00a2ff8f;
+    /* background-color: #0a243d9d; */
+    background-color: #08243c9d;
+}
+
+
+#close
+{
+    color: rgb(175, 175, 175);
+    font-size: 35px;
+    text-align: right;
+    position: relative;
+    right:20px;
+    top: 10px;
+    display:block;
+    margin: 0;
+    cursor: pointer;
+    
+    /* left: 2000px; */
+}
+
+#close:hover
+{
+    color: #00a2ff8f;
+}
+
+em{
+    color: white;
+    /* font-size: 15px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: -25px;
+    padding: 30px;
+    font-style: none
+}
+
+
+#nav_lines{
+    font-style: normal;
+    font-size: 35px;
+    float: left;
+    position: relative;
+    top: 5px;
+    z-index: 3;
+    font-style:none;
+    color: rgb(175, 175, 175);
+}
+
+#open_nav
+{
+    cursor: pointer;
+}
+
+#open_nav:hover
+{
+    color: #00a2ff8f;
+}
+
+.header-links{
+    float: right;
+    font-style: normal;
+    position: relative;
+    top: 0px;
+    margin: -20px;
+    padding: 40px;
+    color: rgb(146, 146, 146);
+}
+
+.header-links:link, .header-links:visited{
+    color:  rgb(146, 146, 146);
+}
+
+.header-links:hover{
+    color: #00a2ff8f;
+    transition: .5s;
+}
+
+/* end nav */
+
+/*content*/
+#container
+{
+    /* margin: 0 auto; */
+    /* width: 760px; */
+    /* z-index: -3; */
+    display: inline-block;
+    height: 4400px;
+    width:100%;
+    /* padding: 500px; */
+    /* position: absolute;
+    top: 160px;
+    bottom: 522px;
+    left:439px; */
+    /* right:514px; */
+}
+/* sidebar */
+
+#sidebar
+{
+    position: fixed;
+    right:60px;
+    bottom: 0px;
+    width: 100px;
+    height: 30%;
+    z-index: 2;
+    /* outline: solid 1px red; */
+}
+
+
+ #link-container
+ {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    margin: 0 auto;
+ }
+
+ .sidebar-links{ 
+    width: 50px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    opacity: .35;
+    animation-name: fadeInFromRight;
+    animation-duration: 2s;
+ } 
+
+ .sidebar-links:hover
+ {
+    opacity: .7;
+    transition: .5s;
+ }
+
+/* home */
+img
+{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    display:block;
+}
+
+#home{
+    font-size: 50px;
+    font-family:Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    /* positioning */
+    position: absolute;
+    display: inline-block;
+    top: 60px;
+    margin:0 auto;
+    width:100%;
+    /* border: solid 1px red; */
+}
+
+#intro{
+    z-index: 1;
+    color: #00a2ff;
+    animation-duration: 2s;
+}
+
+#name
+{
+    font-weight: normal;
+    color: white;
+    font-size: 60px;
+    animation-duration: 4s;
+}
+
+#more_info
+{
+    font-weight: normal;
+    color: rgb(214, 214, 214);
+    padding-top: 3em;
+    animation-duration: 6s;
+}
+
+#intro, #name, #more_info
+{
+    /* position:relative;
+    bottom: 100px; */
+    /* margin: 0 auto; */
+    animation-name: fadeInFromBottom;
+    margin: 0 auto;
+}
+
+#home-textbox
+{
+    padding: 120px;
+    position: relative;
+    left:340px;
+    width: 1000px;
+    /* bottom: 223px; */
+    margin: 0 auto;
+
+}
+
+#home_whole{
+    position:relative;
+    right:200px;
+    margin: 0 auto;
+}
+
+/* end home */
+
+#buffer
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    /* margin: 0 auto; */
+    top: 880px;
+    width: 100%;
+    /* width: 760px; */
+    /* border: solid 1px blueviolet; */
+}
+
+/* about_me */
+#about_me
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    /* margin: 0 auto; */
+    top: 940px;
+    width: 100%;
+    height: fit-content;
+    /* width: 760px; */
+    /* border: solid 1px blueviolet; */
+}
+
+h2
+{
+    font-size: 40px;
+    color: #00a2ff;
+    font-weight: normal;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+    left: 20px;
+}
+
+#about_me p
+{
+    font-size:17px;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    /* position: relative; */
+    /* left: 100px; */
+}
+
+#about_me ul
+{
+    color: rgb(163, 163, 167);
+    font-size: 15px;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    /* right: 450px; */
+}
+
+#paragraph
+{
+    width: 600px;
+    /* margin: 0 auto; */
+    position: relative;
+    left: 400px;
+    top: 12px;
+    line-height: 1.8;
+    /* border:solid red 1px; */
+}
+
+#paragraph ul
+{
+    position:relative;
+    left: 20px;
+    margin: 0 0;
+    bottom: 30px;
+    padding: 0 0;
+}
+
+#about_me_textbox
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    position:relative;
+    /* right: 150px; */
+    /* border: solid green 1px; */
+}
+
+#face_pic
+{
+    margin: 0 auto;
+    width: 314px;
+    height: 380px;
+    position: relative;
+    right: 330px;
+    bottom: 550px;
+    box-shadow: 0 20px 10px -15px black;
+}
+
+hr
+{
+    background-color: white;
+    height: .2px;
+    opacity: 0.5;
+    border-radius: 2px;
+}
+
+
+/* #about_me_hr{
+    
+    position: relative;
+    right: 250px;
+    bottom: 18px;
+    width: 100px;
+} */
+
+strong
+{
+    color: #00a2ff;
+    font-weight: normal;
+}
+
+/* end about_me */
+
+/* projects */
+#bufferTwo
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    top: 1640px;
+    width: 100%;
+}
+
+#projects
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    top: 1700px;
+    width: 100%;
+    height: fit-content;
+}
+
+#projects_textbox
+{
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    height: fit-content;
+    /* border: solid 1px red; */
+}
+
+#main_project
+{
+    margin-top: 25px;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    box-shadow: 0 30px 10px -15px black;
+    /* border: solid 1px violet; */
+}
+
+.project-img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#main_project p
+{
+    font-size:18px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    background-color: #08243c9d;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 1000px;
+}
+
+.github-img
+{
+    display: inline-block;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    opacity: .65;
+}
+
+.github-img:hover
+{
+    transition: .3s;
+    opacity: 1;
+}
+
+.other_projects
+{
+    margin-top: 70px;
+    width: 1000px;
+    height: 450px;
+    /* border: solid 1px red; */
+    position: relative;
+    color:white;
+    font-size:15px;
+    line-height: 1.5;
+}
+
+#other-project-one
+{
+    /* border: solid 1px violet; */
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    box-shadow: 0 23px 10px -15px black;
+}
+
+#other-project-two
+{
+    /* border: solid 1px violet; */
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top:0;
+    box-shadow: 0 23px 10px -15px black;
+}
+
+#other-project-one p
+{
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    background-color: #08243c9d;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 450px;
+}
+
+#other-project-two p
+{
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    background-color: #08243c9d;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 450px;
+}
+
+/*experience section */
+#bufferThree
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    top: 3100px;
+    width: 100%;
+}
+
+#experience
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    position:absolute;
+    display: inline-block;
+    top: 3160px;
+    width: 100%;
+    color:white;
+    font-size: 20px;
+    line-height: 0.9;
+    /* border: solid 1px red; */
+    /* height: 1000px;  */
+}
+
+#experience_header
+{
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    height: fit-content;
+}
+
+
+#experience_header ul
+{
+    color:  rgb(146, 146, 146); 
+    font-size: 18px;
+    position: relative;
+    width: fit-content;
+}
+
+#experience_header li
+{
+    padding-bottom: 20px;
+}
+
+#UT_logo_pic
+{
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.date-tag
+{
+    color:  rgb(146, 146, 146);
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#bufferFour
+{
+    position:absolute;
+    display: inline-block;
+    top: 3800px;
+    width: 100%;
+}
+
+#contact_me
+{
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+    color: white;
+    position: absolute;
+    top: 3860px;
+    width: 100%;
+}
+
+#contact_text
+{
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    height: fit-content;
+}
+
+.contact_info
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#grey_text
+{
+    font-size: 28px;
+    color:rgb(146, 146, 146);
+}
+
+#contact-link
+{
+    background-color: rgba(146, 146, 146, 0.349);
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#contact-link:link, #contact-link:visited{
+    color: white;
+}
+
+#contact-link:hover{
+    color: #00a2ff;
+    background-color: rgba(146, 146, 146, 0.37);
+    transition: .5s;
+}
+
+footer
+{
+    position: absolute;
+    top: 4400px;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
+}
+
+#attribution-link:link, #attribution-link:visited
+{
+    color:#00a2ff;
+}
+
+/* end projects */
+
+@keyframes fadeInFromBottom{
+    0%{
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromRight
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100%
+    {
+        opacity: .35;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navFadeIn
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navClose
+{
+    0%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+}
