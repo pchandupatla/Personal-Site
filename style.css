@@ -147,7 +147,7 @@ em{
     /* margin: 0 auto; */
     /* width: 760px; */
     /* z-index: -3; */
-    display: inline-block;
+    display: block;
     height: 4400px;
     width:100%;
     /* padding: 500px; */
@@ -208,13 +208,44 @@ img
     font-size: 50px;
     font-family:Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
     /* positioning */
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    /* display: block; */
     top: 60px;
-    margin:0 auto;
-    width:100%;
-    /* border: solid 1px red; */
+    /* width:100%; */
+    height: fit-content;
+    /* border: solid 1px violet; */
 }
+
+#home-textbox
+{
+    /* padding: 120px; */
+    /* box-sizing: border-box; */
+    display: block;
+    position: relative;
+    /* left:340px; */
+    width: 1000px;
+    /* bottom: 223px; */
+    margin: 0 auto;
+    /* border: solid 1px red; */
+
+}
+
+#text
+{
+    /* position: relative; */
+    /* margin: 0 auto; */
+    /* left: 100px; */
+    /* border: solid 1px blue; */
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* #home_whole{
+    position:relative;
+    right:200px;
+    margin: 0 auto;
+} */
 
 #intro{
     z-index: 1;
@@ -234,7 +265,7 @@ img
 {
     font-weight: normal;
     color: rgb(214, 214, 214);
-    padding-top: 3em;
+    padding-top: 2em;
     animation-duration: 6s;
 }
 
@@ -244,25 +275,9 @@ img
     bottom: 100px; */
     /* margin: 0 auto; */
     animation-name: fadeInFromBottom;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
-#home-textbox
-{
-    padding: 120px;
-    position: relative;
-    left:340px;
-    width: 1000px;
-    /* bottom: 223px; */
-    margin: 0 auto;
-
-}
-
-#home_whole{
-    position:relative;
-    right:200px;
-    margin: 0 auto;
-}
 
 /* end home */
 
@@ -282,12 +297,13 @@ img
 #about_me
 {
     font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
-    position:absolute;
-    display: inline-block;
+    position: absolute;
+    /* display: inline-block; */
     /* margin: 0 auto; */
     top: 940px;
     width: 100%;
     height: fit-content;
+    /* border: solid 1px red; */
     /* width: 760px; */
     /* border: solid 1px blueviolet; */
 }
@@ -404,10 +420,11 @@ strong
 {
     font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
     position:absolute;
-    display: inline-block;
+    display: block;
     top: 1700px;
     width: 100%;
     height: fit-content;
+    /* border: solid 1px violet; */
 }
 
 #projects_textbox
