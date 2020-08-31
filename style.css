@@ -162,7 +162,7 @@ em{
 #sidebar
 {
     position: fixed;
-    right:60px;
+    right:0px;
     bottom: 0px;
     width: 100px;
     height: 30%;
@@ -190,7 +190,7 @@ em{
 
  .sidebar-links:hover
  {
-    opacity: .7;
+    opacity: .9;
     transition: .5s;
  }
 
@@ -459,7 +459,7 @@ strong
     box-sizing: border-box;
     padding: 15px;
     color: white;
-    background-color: #08243c9d;
+    background-color: #08243cda;
     position: absolute;
     bottom: 0;
     margin-bottom: 0;
@@ -515,29 +515,18 @@ strong
     box-shadow: 0 23px 10px -15px black;
 }
 
-#other-project-one p
+.other_projects p
 {
     box-sizing: border-box;
     padding: 15px;
     color: white;
-    background-color: #08243c9d;
+    background-color: #08243cda;
     position: absolute;
     bottom: 0;
     margin-bottom: 0;
     width: 450px;
 }
 
-#other-project-two p
-{
-    box-sizing: border-box;
-    padding: 15px;
-    color: white;
-    background-color: #08243c9d;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0;
-    width: 450px;
-}
 
 /*experience section */
 #bufferThree
