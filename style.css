@@ -534,7 +534,7 @@ strong
     font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
     position:absolute;
     display: inline-block;
-    top: 3100px;
+    top: 2990px;
     width: 100%;
 }
 
@@ -543,7 +543,7 @@ strong
     font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
     position:absolute;
     display: inline-block;
-    top: 3160px;
+    top: 3050px;
     width: 100%;
     color:white;
     font-size: 20px;
@@ -572,6 +572,7 @@ strong
 #experience_header li
 {
     padding-bottom: 20px;
+    line-height: 30px;
 }
 
 #UT_logo_pic
@@ -592,7 +593,7 @@ strong
 {
     position:absolute;
     display: inline-block;
-    top: 3800px;
+    top: 3950px;
     width: 100%;
 }
 
@@ -601,7 +602,7 @@ strong
     font-family: Tahoma, Segoe UI, Geneva, Verdana, sans-serif;
     color: white;
     position: absolute;
-    top: 3860px;
+    top: 4100px;
     width: 100%;
 }
 
